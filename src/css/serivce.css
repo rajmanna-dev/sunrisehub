@@ -1,0 +1,61 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    width: 850px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-count {
+    color: #ee964b;
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+}
+
+.service-heading {
+    color: #ee964b;
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.one {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.two {
+    grid-area: 1 / 3 / 2 / -1;
+}
+
+.brush {
+    grid-area: 1 / 2 / -1 / 3;
+    text-align: center;
+    margin: 0 80px;
+}
+
+.three {
+    grid-area: 2 / 1 / -1 / 2;
+}
+
+.four {
+    grid-area: 2 / 3 / -1 / -1;
+}
+
+@media(max-width: 678px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+    }
+
+    .brush {
+        order: -1;
+    }
+
+    .brush img {
+        width: 150px;
+    }
+}
