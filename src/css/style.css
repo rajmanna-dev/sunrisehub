@@ -1,7 +1,567 @@
 html,
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #26211e;
+  overflow-x: hidden;
+}
+
+/* divider css */
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.divider-heading {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.divider img {
+  width: 40px;
+}
+
+.divider-tagline {
+  font-size: 1.1rem;
+  color: #ee964b;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar css */
+
+.navbar {
+  height: 4rem;
+  padding: 3px 5rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #201b18;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.navbar .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-items {
+  width: 350px;
+  min-width: 200px;
+}
+
+.nav-items ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.navbar .item {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+.navbar .item:hover {
+  color: #ee964b;
+}
+
+.navbar .activate {
+  color: #ee964b;
+}
+
+.navbar .activate:hover {
+  color: #fff;
+}
+
+.navbar .contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact svg {
+  margin-right: 10px;
+  color: #ee964b;
+}
+
+.contact .numbers {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.contact .numbers p {
+  margin: 0;
+}
+
+/* Heros section css */
+
+.heros {
+  background-color: #201b18;
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid-container .left {
+  padding-left: 5rem;
+  grid-area: 1 / 1 / -1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  margin-top: 100px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  color: #ee964b;
+  line-height: 4.5rem;
+  margin: 0;
+}
+
+.header p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  width: 600px;
+  color: #fff;
+}
+
+.booking {
+  background-color: #ee964b;
+  font-family: "Roboto Slab", sans-serif;
+  color: #000;
+  padding: 10px;
+  font-size: 1.1rem;
+  margin: 15px 0;
+  border: none;
+}
+
+.header .booking:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+}
+
+.location svg {
+  margin-right: 6px;
+  color: #ee964b;
+}
+
+.grid-container .right {
+  text-align: end;
+  grid-area: 1 / 2 / -1 / -1;
+}
+
+.right img {
+  width: 453px;
+  height: 100%;
+}
+
+/* Explore section css */
+
+.explore {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.barber-video video {
+  width: 500px;
+}
+
+.barber-info {
+  width: 320px;
+  margin-left: 74px;
+  margin-bottom: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.barber-info h2 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #ee964b;
+  margin: 0 0 30px 0;
+}
+
+.barber-info p {
+  font-family: "Roboto", sans-serif;
+}
+
+.signature {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.upper-text {
+  margin: 10px 0;
+}
+
+.bottom-text {
+  text-align: end;
+  margin: 5px 0;
+}
+
+#text {
+  color: #ee964b;
+  font-size: 1.1rem;
+}
+
+/* Services section css */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  width: 850px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin: 50px auto;
+}
+
+.service-count {
+  color: #ee964b;
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+
+.service-heading {
+  color: #ee964b;
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.two {
+  grid-area: 1 / 3 / 2 / -1;
+}
+
+.brush {
+  grid-area: 1 / 2 / -1 / 3;
+  text-align: center;
+  margin: 0 80px;
+}
+
+.three {
+  grid-area: 2 / 1 / -1 / 2;
+}
+
+.four {
+  grid-area: 2 / 3 / -1 / -1;
+}
+
+/* team section css */
+
+.team {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.card {
+  margin: 0 20px;
+}
+
+.card-img {
+  margin: 0 auto;
+}
+
+.card-img img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.member-name {
+  color: #ee964b;
+  font-family: "Roboto Slab", sans-serif;
+  margin-top: 10px;
+}
+
+.member-intro {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  width: 250px;
+  font-size: 0.95rem;
+  margin: auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.social-media svg {
+  color: #ee964b;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.social-media svg:hover {
+  color: #fff;
+}
+
+.reach-me {
+  background-color: #ee964b;
+  font-family: "Roboto Slab", sans-serif;
+  padding: 5px 8px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.reach-me:hover {
+  background-color: #fff;
+}
+
+/* testimonials section css */
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.review-card {
+  width: 280px;
+  text-align: center;
+  margin: 0 15px;
+  color: #fff;
+}
+
+.review-header {
+  color: #ee964b;
+  margin-top: 20px;
+}
+
+.review-body {
+  margin-top: 10px;
+}
+
+.review-footer h4 {
+  font-size: 1.1rem;
+  font-family: "Roboto Slab", sans-serif;
+  margin-top: 10px;
+}
+
+/* booking form section css */
+
+.booking-form {
+  padding: 20px 0;
+  height: 400px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: auto;
+}
+
+.form form input {
+  padding: 8px 5px;
+  margin: 10px 0;
+  border: none;
+}
+
+.form form input[type="Button"] {
+  background-color: #ee964b;
+  font-size: 1.1rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 10px 0;
+}
+
+.form form input[type="Button"]:hover {
+  background-color: #fff;
+}
+
+.form h3 {
+  text-align: center;
+  color: #ee964b;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* footer css */
+
+.footer.heros {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ee964b;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 678px) {
+
+    /* navbar css */
+  .navbar {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+
+  .navbar .contact {
+    display: none;
+  }
+
+  /* heros section css  */
+  .heros {
+    margin-bottom: 20px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container .left {
+    padding: 0 2rem;
+  }
+
+  .header {
+    margin-top: 50px;
+  }
+
+  .header h1 {
+    font-size: 2.1rem;
+    font-family: "Roboto Slab", sans-serif;
+    color: #ee964b;
+    line-height: 1.2;
     margin: 0;
-    padding: 0;
-    background-color: #26211e;
-    overflow-x: hidden;
+  }
+
+  .header p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 20px 0;
+    width: auto;
+  }
+
+  .right img {
+    width: 300px;
+    height: 100%;
+  }
+
+  .location svg {
+    width: 30px;
+    height: 40px;
+  }
+
+  .location > p {
+    font-size: 0.8rem;
+  }
+
+  /* explore section css  */
+  .explore {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .barber-video video {
+    width: 330px;
+  }
+
+  .barber-info {
+    margin-left: 0px;
+  }
+
+  .barber-info h2 {
+    font-size: 1.6rem;
+    margin: 30px 0;
+  }
+
+  .signature {
+    align-self: flex-end;
+  }
+
+  .bottom-text {
+    text-align: start;
+  }
+
+  /* services css  */
+  .services {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin: 10px auto;
+  }
+
+  .brush {
+    order: -1;
+  }
+
+  .brush img {
+    width: 150px;
+  }
+
+  /* team css  */
+  .team {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 20px 0;
+  }
+
+  /* testimonials css  */
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .review-card {
+    margin: auto;
+  }
+
+  /* booking form section css  */
+  .form form {
+    margin: auto;
+  }
 }
