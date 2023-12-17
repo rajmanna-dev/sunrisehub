@@ -1,5 +1,6 @@
 .heros {
   background-color: #201b18;
+  margin-bottom: 50px;
 }
 
 .grid-container {
@@ -38,10 +39,9 @@
   color: #fff;
 }
 
-.header .booking {
+.booking {
   background-color: #ee964b;
   font-family: 'Roboto Slab', sans-serif;
-  text-decoration: none;
   color: #000;
   padding: 10px;
   font-size: 1.1rem;
@@ -78,6 +78,11 @@
 }
 
 @media(max-width: 1024px) {
+
+  .heros {
+  margin-bottom: 20px;
+  }
+
   .grid-container {
     display: flex;
     flex-direction: column;

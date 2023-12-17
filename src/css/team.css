@@ -1,0 +1,73 @@
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card {
+    margin: 0 20px;
+}
+
+.card-img {
+    margin: 0 auto;
+}
+
+.card-img img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.member-name {
+    color: #ee964b;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-top: 10px;
+}
+
+.member-intro {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    font-size: 0.95rem;
+    margin: auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.social-media svg {
+    color: #ee964b;
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.social-media svg:hover {
+    color: #fff;
+}
+
+.reach-me {
+    background-color: #ee964b;
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 5px 8px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.reach-me:hover {
+    background-color: #fff;
+}
+
+@media(max-width: 678px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,38 @@
+.testimonials {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.review-card {
+    width: 280px;
+    text-align: center;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.review-header {
+    color: #ee964b;
+    margin-top: 20px;
+}
+
+.review-body {
+    margin-top: 10px;
+}
+
+.review-footer h4 {
+    font-size: 1.1rem;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-top: 10px;
+}
+
+
+@media(max-width: 678px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .review-card {
+        margin: auto;
+    }
+}
